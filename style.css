@@ -1,0 +1,35 @@
+    .wrapper {
+      height: 100vh;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center;
+      justify-content: center;
+      align-items: center;
+      background: blue;
+    }
+
+    .svg-wrapper {
+      margin: 0 auto;
+      height: 200px;
+      width: 200px;
+      /* This is the code that solves it */
+      overflow: hidden;
+      -webkit-mask-image: url(border-radius.svg);
+      mask-image: url(border-radius.svg);
+    }
+
+    .iframe-wrapper {
+      /* This doesn't work, illustrational purpose only */
+      border-radius: 5px;
+    }
+
+    iframe {
+      height: 350px;
+      /* This doesn't work, illustrational purpose only */
+      border-radius: 5px;
+    }
