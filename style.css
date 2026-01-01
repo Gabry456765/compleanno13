@@ -1,5 +1,5 @@
     .wrapper {
-      height: 100vh;
+      width: 100%;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -14,22 +14,20 @@
     }
 
     .svg-wrapper {
-      margin: 0 auto;
-      height: 200px;
-      width: 200px;
-      /* This is the code that solves it */
+      width: 100%;
       overflow: hidden;
       -webkit-mask-image: url(border-radius.svg);
       mask-image: url(border-radius.svg);
     }
 
     .iframe-wrapper {
+      width: 100%;
       /* This doesn't work, illustrational purpose only */
-      border-radius: 5px;
+      border-radius: 13px;
     }
 
     iframe {
-      height: 350px;
+      width: 100%;
       /* This doesn't work, illustrational purpose only */
-      border-radius: 5px;
+      border-radius: 13px;
     }
